@@ -1,0 +1,422 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>游戏助手</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">		
+<link rel="stylesheet" href="css/bootstrap.min.css" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<style>
+.all{
+    width: 100%;
+    height: 1352px;
+    max-width: 640px;
+    min-width: 320px;
+    margin: 0px auto;
+    padding: 0px;
+    border: 1px #000 solid;
+    background: rgb(207, 206, 206);
+}
+header form{
+    width: 100%;
+    height: 80px;
+    background:linear-gradient(180deg, rgb(4, 238, 255),rgb(2, 152, 240));
+    position: relative;
+}
+
+header input{ 
+    background: url(img/sousuo.png) no-repeat;
+    background-size: 6%;
+    border: 2px solid #fff;
+    padding-left: 40px;
+    height: 28px;
+    width: 60%;
+    margin: 26px 0 0 23px;
+    box-sizing: border-box;
+    }
+header input::-webkit-input-placeholder {
+    color: #fff;
+    }
+.a1{margin-left: 15%;position: absolute;top: 25px;}
+.a2{margin-left: 25%;position: absolute;top: 22px;}
+
+.container {
+            position: relative;
+            width: 100%;
+            height: 220px;
+            box-shadow: 0 0 5px green;
+            overflow: hidden;
+        }
+.container .wrap {
+            position: absolute;
+            width: 700%;
+            height: 220px;
+            z-index: 1;
+}
+.container .wrap img {
+            float: left;
+            width: 14.3%;
+            height: 220px;
+}
+.container .buttons {
+            position: absolute;
+            right: 5px;
+            bottom:40px;
+            width: 150px;
+            height: 10px;
+            z-index: 2;
+}
+.container .buttons span {
+            margin-left: 5px;
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: green;
+            text-align: center;
+            color:white;
+            cursor: pointer;
+}
+.container .buttons span.on{
+            background-color: red;
+}
+.container .arrow {
+            position: absolute;
+            top: 35%;
+            color: green;
+            padding:0px 14px;
+            border-radius: 50%;
+            font-size: 50px;
+            z-index: 2;
+            display: none;
+}
+.container .arrow_left {
+    left: 10px;
+}
+.container .arrow_right {
+    right: 10px;
+}
+.container:hover .arrow {
+    display: block;
+}
+.container .arrow:hover {
+    background-color: rgba(0,0,0,0.2);
+}
+
+
+
+
+.dhl{
+    margin-top: 1px;
+    width: 100%;
+    height: 220px;
+    background: #fff;
+}
+.dhl ul{
+    width: 100%;
+    height: 220px;
+    padding-left: 0;
+    text-align: center;
+}
+.dhl ul li{
+padding-top: 10px;
+list-style: none;
+float: left;
+height: 110px;
+width: 25%;
+font-size: 14px;
+}
+
+.dhl img{width: 30%;}
+.dhl ul li a{text-decoration: none;color: black;}
+.dhl ul li p{margin-top:10px;} 
+.dhl li:hover{background: rgb(216, 230, 188);}
+.yx{
+    width: 100%;
+    height: 732px;
+    background: #fff;
+    }
+.yx ul{width: 100%;padding-top: 0px;padding-left: 0;}
+.yx img{float: left;margin: 10px;}
+.yx li{
+    list-style: none;
+    height: 100px;
+    border-bottom: 1px #ccc solid;
+    position: relative;}
+.yx a{text-decoration: none;color: #000;}
+.yx p{padding-top: 10px;margin: 4px;;}
+.kk{
+    display: inline-block;
+    margin: 0;
+    width: 28px;
+    height: 18px;
+    line-height: 0px;
+    background: rgb(34, 129, 238);
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 5px;
+    }
+.kk2{
+    display: inline-block;
+    margin: 0;
+    width: 28px;
+    height: 18px;
+    line-height: 0px;
+    background: rgb(255, 196, 0);
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 5px;
+    }
+small{ font-size: 10px;color: #666;margin-left: 10px;}
+.ziti{color: #666;font-size: 14px;}
+#xz{
+    width: 50px; 
+    height: 27px;
+    color: #fff;
+    background: rgb(34, 129, 238);
+    display: inline-block;
+    text-align: center;
+    font-size: 16px;
+    line-height: 25px;
+    border-radius: 3px;
+    position: absolute;
+    right: 5%;
+    top: 35px;
+    }
+footer{
+    width: 100%;
+    height: 90px;
+    background: #fff;
+    margin-top: 3px;
+    }
+footer ul{width: 100%;height: 90px;padding: 0px;}
+footer li{width: 25%;list-style: none;float: left;padding-top: 10px;}
+footer img{margin-left: 40%;}
+footer p{margin-top: 10px;font-size: 14px;text-align: center;}
+footer a{text-decoration:none;color:#000;}
+</style>
+</head>
+<body>
+<div class="all">
+<!--header-->
+<header>
+<form>
+<input type="text" placeholder="火影忍者">
+<a href="#" class="a1"><img src="img/1.png" width="40"></a>
+<a href="#" class="a2"><img src="img/download.png"  width="35"></a>
+</form>
+</header>
+<!--轮播图-->
+<div class="lbt">
+        <div class="container">
+                <div class="wrap" style="left: -640px;">
+                    <img src="./img/lun5.jpg" alt="">
+                    <img src="./img/lun1.jpg" alt="">
+                    <img src="./img/lun2.jpg" alt="">
+                    <img src="./img/lun3.jpg" alt="">
+                    <img src="./img/lun4.jpg" alt="">
+                    <img src="./img/lun5.jpg" alt="">
+                    <img src="./img/lun1.jpg" alt="">
+                </div>
+                <div class="buttons">
+                    <span class="on">1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>4</span>
+                    <span>5</span>
+                </div>
+                <a href="javascript:;" class="arrow arrow_left">&lt;</a>
+                <a href="javascript:;" class="arrow arrow_right">&gt;</a>
+            </div>
+</div>
+<script>
+        //图片可以手动循环播放
+var wrap = document.querySelector(".wrap");
+var next = document.querySelector(".arrow_right");
+var prev = document.querySelector(".arrow_left");
+    next.onclick = function () {
+        next_pic();
+    }
+    prev.onclick = function () {
+    prev_pic();
+    }
+    function next_pic () {
+        index++;
+        if(index > 4){
+            index = 0;
+        }
+    showCurrentDot();
+    var newLeft;
+    if(wrap.style.left === "-3840px"){
+        newLeft = -1280;
+    }else{
+        newLeft = parseInt(wrap.style.left)-640;
+    }
+        wrap.style.left = newLeft + "px";
+    }
+    function prev_pic () {
+        index--;
+        if(index < 0){
+            index = 4;
+        }
+    showCurrentDot();
+        var newLeft;
+        if(wrap.style.left === "0px"){
+        newLeft = -2560;
+        }else{
+            newLeft = parseInt(wrap.style.left)+640;
+        }
+            wrap.style.left = newLeft + "px";
+            }
+// 手动循环播放的，我们如果希望自动播放，使用setInterval()即可 
+    var timer = null; 
+    function autoPlay () {
+        timer = setInterval(function () {
+            next_pic();
+        },2000);
+    }
+        autoPlay();
+//轮播图停止播放，只要clearInterval()即可  只要我们把鼠标移入轮播图中，这时轮播图就不会播放了。而移开鼠标之后，轮播图自动播放。
+    var container = document.querySelector(".container");
+        container.onmouseenter = function () {
+            clearInterval(timer);
+        }
+        container.onmouseleave = function () {
+            autoPlay();    
+        }
+//轮播图就可以自动切换，并且小圆点也在随着图片的变化而变化了。
+    var index = 0; 
+    var dots = document.getElementsByTagName("span");
+    function showCurrentDot () {
+        for(var i = 0, len = dots.length; i < len; i++){
+            dots[i].className = "";
+        }
+            dots[index].className = "on";
+        }
+        
+//当点击小圆点时， 就可跳转到相应图片。 实现原理即：  点击小圆点，就使wrap的Left变成相应的值。
+    for (var i = 0, len = dots.length; i < len; i++)
+        {
+        (function(i){
+            dots[i].onclick = function () {
+            var dis = index - i;
+            if(index == 4 && parseInt(wrap.style.left)!==-3200){
+                                dis = dis - 5;     
+                            }
+//和使用prev和next相同，在最开始的照片5和最终的照片1在使用时会出现问题，导致符号和位数的出错，做相应地处理即可
+            if(index == 0 && parseInt(wrap.style.left)!== -640){
+                    dis = 5 + dis;
+            }
+            wrap.style.left = (parseInt(wrap.style.left) +  dis * 640)+"px";
+            index = i;
+            showCurrentDot();
+        }
+            })(i);            
+        }
+</script>
+
+
+<!--中间导航栏-->
+<div class="dhl">
+<ul>
+<li><a href="#"><img src="img/t1.png"><p>测试试玩</p></a></li>
+<li><a href="#"><img src="img/t2.png"><p>新游预约</p></a></li>
+<li><a href="#"><img src="img/t3.png"><p>新游开服</p></a></li>
+<li><a href="#"><img src="img/t4.png"><p>末世生存</p></a></li>
+<li><a href="#"><img src="img/t5.png"><p>无敌单机</p></a></li>
+<li><a href="#"><img src="img/t6.png"><p>MOD游戏</p></a></li>
+<li><a href="#"><img src="img/t7.png"><p>模拟经营</p></a></li>
+<li><a href="#"><img src="img/t8.png"><p>今晚吃鸡</p></a></li>
+</ul>
+</div>
+<!--游戏列表-->
+<div class="yx">
+ <ul>
+    <li>
+        <a href="#">
+        <img src="img/yx2.jpg">
+        <p>和平精英（今日公测）</p>
+        <p class="kk">官方</p>
+        <p class="kk2">动作</p>
+        <small>1870M</small>
+        <p class="ziti">完美画质、超大地图、百人自由竞技</p></a>
+        <a href="#" id="xz">下载</a>
+    </li>
+    <li>
+        <a href="#">
+        <img src="img/yx3.jpg">
+        <p>圆球过隧道（BT版）</p>
+        <p class="kk">BT</p>
+        <p class="kk2">休闲</p>
+        <small>40M</small>
+        <p class="ziti">开局送10连抽、送猛将</p></a>
+        <a href="#" id="xz">下载</a>
+    </li>
+    <li>
+        <a href="#">
+        <img src="img/yx4.jpg">
+        <p>快枪射瓶子</p>
+        <p class="kk">官方</p>
+        <p class="kk2">休闲</p>
+        <small>127M</small>
+        <p class="ziti">开局就送VIP13，神器宠物免费送</p>
+        <a href="#" id="xz">下载</a></a>
+    </li>
+    <li>
+        <a href="#">
+        <img src="img/yx5.jpg">
+        <p>神庙逃亡2（周年派对）</p>
+        <p class="kk">官方</p>
+        <p class="kk2">跑酷</p>
+        <small>77M</small>
+        <p class="ziti">腾讯首款免费游戏、快来充钱吧</p></a>
+        <a href="#" id="xz">下载</a>
+    </li>
+    <li>
+        <a href="#">
+        <img src="img/yx6.jpg">
+        <p>机器人酷跑3</p>
+        <p class="kk">官方</p>
+        <p class="kk2">跑酷</p>
+        <small>223M</small>
+        <p class="ziti">能否逃出生天？也许你对整个游戏一无所知</p></a>
+        <a href="#" id="xz">下载</a>
+    </li>
+    <li>
+        <a href="#">
+        <img src="img/yx7.jpg">
+        <p>荣耀足球</p>
+        <p class="kk">官方</p>
+        <p class="kk2">动作</p>
+        <small>215M</small>
+        <p class="ziti">充值比例1：100，上线送满级VIP</p></a>
+        <a href="#" id="xz">下载</a>
+    </li>
+    <li>
+        <a href="#">
+        <img src="img/yx8.jpg">
+        <p>黑洞大乱斗</p>
+        <p class="kk">官方</p>
+        <p class="kk2">休闲</p>
+        <small>141M</small>
+        <p class="ziti">一款非常好玩的休闲游戏</p></a>
+        <a href="#" id="xz">下载</a>
+    </li>
+</ul>
+</div>
+<!--底部导航栏-->
+
+<footer>
+<ul>
+<a href="index.html"><li><img src="img/d1.png" width="17%"><p>推荐</p></li></a>
+<a href="shequ.html"><li><img src="img/d2.png" width="17%"><p>社区</p></li></a>
+<a href="faxian.html"><li><img src="img/d3.png" width="17%"><p>发现</p></li></a>
+<a href="wode.html"><li><img src="img/d4.png" width="17%"><p>我的</p></li></a>
+</ul>
+</footer>
+</div>
+</body>
+</html>

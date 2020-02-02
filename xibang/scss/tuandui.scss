@@ -1,0 +1,90 @@
+.content1{
+	max-width: 1440px;
+    margin: 0 auto;
+    padding-top: 20px;
+    height: 1055px;
+}
+.content1 .content{
+	width: 100%;
+	max-width: 1024px;
+	margin: 0 auto;
+}
+.pos{
+	line-height: 50px;
+	color: #a3a3a3;
+}
+.pos a{
+    color: #a3a3a3;
+}
+.content1 span{
+    font-size: 16px;
+}
+.content1 span:first-child{
+    font-size: 16px;
+	padding: 7px 0;
+}
+
+.content1 .active{
+	color: #ce251f;
+}
+.juli{
+    margin-top: 47px;
+}
+.juli .col-xs-5,.juli .col-sm-5,.juli .col-md-4{
+    padding: 0px;
+}
+.content1 .people h3{
+    padding-top: 36px;
+    font-size: 18px;
+    color: red;
+}
+.content1 .people h4{
+    padding-top: 15px;
+    font-size: 14px;
+    color: red;
+}
+.content1 .people p{
+    padding-top: 26px;
+    font-size: 12px;
+}
+/*分页*/
+.pagination{
+	width: 410px;
+	margin:20px auto;
+	display: block;
+}
+.pagination > li{
+	display: inline-block;
+	margin-right: 17px;
+}
+.pagination > li:last-child{
+	margin-right: 0;
+}
+.pagination > li > a, .pagination > li > span{
+	color: #a3a3a3;
+	border: 1px solid #b2b2b2;
+}
+.pagination > li > a:focus, .pagination > li > a:hover, .pagination > li > span:focus, .pagination > li > span:hover{
+	color: #fff;
+	background-color: red;
+	border-color: red;
+}
+.pagination > li:first-child > a, .pagination > li:first-child > span{
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+}
+.pagination > li:last-child > a, .pagination > li:last-child > span{
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+@media screen and (min-width: 1024px){
+	.container{
+		width: 1000px;
+		margin: 0 auto;
+	}
+}
+
+@media screen and (max-width: 768px){
+
+}

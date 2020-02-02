@@ -1,0 +1,270 @@
+
+.content1{
+	background-color: #e6e5e5;
+	max-width: 1440px;
+	margin: 0 auto;
+}
+.content1 .content,.content2 .content{
+	width: 100%;
+	max-width: 1024px;
+	margin: 0 auto;
+}
+.bai{
+	background-color: #fff;
+}
+.content1 .list img{
+	margin-left: 162px;
+	margin-right: 190px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+.content1 .list p{
+	padding: 55px 0;
+} 
+
+.content2{
+	max-width: 1440px;
+	margin: 0 auto;
+	height: 657px;
+}
+.content2 .content{
+	position: relative;
+}
+.content2 .title{
+	padding-bottom: 94px;
+}
+
+.content2 .right,.content3 .right,.content4 .right{
+	margin-top: 80px;
+}
+.content2 .right span:first-child,.content3 .right span:first-child,.content4 .right span:first-child{
+	border-right: 1px solid #000;
+	padding-right: 7px;
+	margin-right: 7px;
+}
+.content2 .right .active,.content3 .right .active,.content4 .right .active{
+	color: #ce251f;
+}
+.content2 .zp{
+	position: relative;
+	z-index: 1;
+	display: block;
+}
+.content2 .desc{
+	width: 526px;
+	height: 310px;
+	position: absolute;
+	top: 170px;
+	right: 0;
+}
+.content2 .desc h3{
+	font-size: 18px;
+	margin-top: 80px;
+	margin-left: 122px;
+}
+.content2 .desc p{
+	font-size: 14px;
+	line-height: 24px;
+	margin-top: 18px;
+	margin-left: 130px;
+	padding-right: 20px;
+	color: #adadad;
+}
+.content2 .desc .arrow{
+	margin-left: 122px;
+	margin-top: 68px;
+}
+.more{
+	display: block;
+	font-size: 17px;
+	color: #b82721;
+	padding:57px 7px 7px 7px;
+	border-bottom: 3px solid #b82721;
+	margin: 0 auto;
+	width: 62px;
+}
+.more:hover{
+	color: #b82721;
+	text-decoration: none;
+}
+.content3{
+	background-color: #e6e5e5;
+	max-width: 1440px;
+	margin: 0 auto;
+	height: 700px;
+}
+.content3 ul li{
+	padding-top: 100px;
+	padding-right: 15px;
+}
+
+.content3 ul li:nth-child(5){
+	padding-top:60px; 
+}
+.content3 ul li h3{
+	padding-top:30px; 
+	font-size: 24px;
+}
+.content3 ul li h4{
+	padding-top:10px; 
+	font-size: 14px;
+	padding:10px 0 20px 0; 
+}
+.content3 ul li p{
+	font-size: 12px;
+	color: #9c9c9c;
+}
+.content4{
+	max-width: 1440px;
+	margin: 0 auto;
+	height: 720px;
+}
+.content4 ul li h3{
+	font-weight: bold;
+	font-size: 20px;
+	padding-bottom: 7px;
+}
+.content4 ul li h3{
+	padding-top: 30px;
+}
+.content4 ul li h4{
+	padding-top: 20px;
+}
+.content4 ul li .txt1{
+	color: #9c9c9c;
+	font-size: 12px;
+	padding-bottom: 7px;
+}
+.content4 ul li .txt2{
+	font-size: 12px;
+	padding-bottom: 7px;
+}
+.content4 .you .media-body{
+	padding-left: 18px;
+}
+.content4 .shang{
+	padding-top: 30px;
+}
+.content4 .you span:first-child{
+	font-weight: bold;
+	font-size: 36px;
+}
+
+
+@media screen and (min-width: 1024px){
+	.container{
+		width: 1000px;
+		margin: 0 auto;
+	}
+}
+
+@media screen and (max-width: 768px){
+	.navbar-brand>img{
+		display: block;
+		width: 80px;
+	}
+	.navbar-nav > li:nth-child(4){
+		display: none;	/*隐藏*/
+	}
+	.nav > li{
+		margin-right: 0 !important;
+		text-align: center;
+	}
+	.nav > li > a{
+		padding: 15px 10px;
+	}
+
+	.ad{
+		margin-top: 50px;
+	}
+
+	.title{
+		padding-top: 24px;
+    	padding-bottom: 10px;
+	}
+	.title h3{
+	    font-size: 20px;
+	    background-size: 15px;
+	}
+	.title p{
+		font-size: 12px;
+	}
+	.content1 .list img{
+		float: none!important;
+		margin: 0 auto;
+		display: block;
+	}
+	.content1 .list p{
+		padding: 25px 10px;
+    	text-align: center;
+	}
+
+	.content2 .title{
+		padding-bottom: 10px;
+		float: none!important;
+	}
+	.content2 .right{
+		width: 120px;
+	    margin: 10px auto 20px;
+	    float: none !important;
+	}
+	.content2 .desc{
+		width: auto;
+		height: auto;
+		position: static;	/*不定位*/
+		padding-bottom: 20px;
+		margin: 10px;
+	}
+	.content2 .desc h3{
+		margin-top: 25px;
+		margin-left: 0;
+		text-align: center;
+	}
+	.content2 .desc p{
+		padding: 0 14px;
+		text-align: center;
+		margin-left: 0;
+	}
+	.content2 .desc .arrow{
+		margin-left: 0;
+		margin: 34px auto 0;
+		display: block;
+	}
+	.content2 .more{
+		padding-top: 0px;
+	}
+	.content3{
+		height:1270px;
+	}
+	.content3 .right{
+		width: 120px;
+	    margin: 10px auto 20px;
+	    float: none !important;
+	}
+	.content3 ul li{
+		width: 50%;
+		text-align: center;
+		padding-top: 20px;
+	}
+	.content3 ul li:nth-child(5),.content3 ul li:nth-child(6){
+		width: 100%;
+		text-align: center;
+		padding-top: 20px;
+	}
+	.content3 ul li h3{
+		padding-top: 10px;
+	}
+	.content4 {
+		height: 1100px;
+	}
+	.content4 .right{
+		width: 130px;
+	    margin: 10px auto 20px;
+	    float: none !important;
+	}
+
+	.zixun .media-body, .zixun .media-left, .zixun .media-right{
+		display: block;
+	}
+
+}

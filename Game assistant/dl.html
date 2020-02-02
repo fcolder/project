@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>用户登录</title>
+<style>
+.all{
+    width: 100%;
+    height: 400px;
+    max-width: 640px;
+    min-width: 320px;
+    margin:100px auto 0 auto;
+    border: 1px solid #000;
+    background: rgb(238, 236, 236);
+}
+p{margin: 0;}
+.yhdl{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    background: linear-gradient(180deg,rgb(1, 238, 255),rgb(3, 101, 158))}
+form{width: 100%;padding-top: 45px;}
+.form1 input{
+    width: 83%;
+    height: 30px;
+    margin: 25px 0 0 50px;}
+.form1 .dl{background: linear-gradient(180deg,rgb(253, 144, 2),rgb(255, 230, 4));height: 50px;}
+a{text-decoration: none;margin-top: 70px;color: rgb(0, 183, 255);}
+.a1{float: left; margin-left: 20px;}
+.a2{float: right;margin-right: 20px;}
+</style>
+</head>
+<body>
+<div class="all">
+<div class="yhdl"><p>用户登录</p></div>
+<form class="form1" action="ht.html">
+    <input type="text" placeholder="请输入手机号码" id="phone">
+    <input type="password" placeholder="请输入密码" id="pwd">
+    <input type="submit" value="登录" class="dl" onclick="return checkform1()">
+</form>
+    <p><a href="zhuce.html" class="a1">用户注册</a><a href="#" class="a2">忘记密码</a></p>
+</div>
+<script>
+function trim(){
+        return this.replace(/(^\s*)|(\s*$)/g,"");
+}
+function checkform1(){
+    if (document.getElementById("phone").value.trim()=="") {
+        alert("请输入手机号");
+        document.getElementById("phone").focus();
+        return false;
+}
+var phone=document.getElementById("phone").value.trim();
+    if (phone.length<11||phone.length>11) {
+        alert("请按照要求输入手机号！");
+        document.getElementById("phone").focus();
+        return false;
+}
+var pwd=document.getElementById("pwd").value.trim();
+    if (document.getElementById("pwd").value.trim()=="") {
+        alert("请输入密码")
+        document.getElementById("pwd").focus();
+        return false;
+}
+    alert("登录成功!");
+}                   
+</script>
+</body>
+</html>

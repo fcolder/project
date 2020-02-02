@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>游戏助手</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">		
+<link rel="stylesheet" href="css/bootstrap.min.css" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<style>
+.all{
+    width: 100%;
+    height: 1074px;
+    max-width: 640px;
+    min-width: 320px;
+    margin: 0px auto;
+    padding: 0px;
+    border: 1px #000 solid;
+    background: #f0f0f0;
+}
+header{
+    width: 100%;
+    height: 80px;
+    background:linear-gradient(180deg, rgb(4, 238, 255),rgb(2, 152, 240));
+    position: relative;
+}
+.a1{margin-left: 85%;position: absolute;top: 25px;}
+.xq{
+    width: 95%;
+    height: 160px;
+    margin: 10px auto;
+    background: #fff;
+    border-radius: 10px;}
+.xq ul,.lb ul{padding: 0;}
+.xq li{list-style: none;height: 65px;padding: 0 10px 0 10px;}
+.zj{border-bottom: 1px #ccc solid;border-top: 1px #ccc solid;padding: 10 0 0 10px; }
+.img1{float: left;margin-right: 10px;}
+.img2{float: right;}
+.p1{display: inline-block;}
+.p2{display: inline-block;color: #999;}
+.xq p{margin: 0;}
+.xq span{margin-top: 8px;}
+.xq .sm{height: 30px;}
+.xq .zj{padding-top: 10px;}
+.xq .xm{padding-top: 10px;height: 50px;}
+.xq .zj2{height: 130px;border-top: 1px #ccc solid; padding: 6px 20px 0 70px;}
+.yx{
+    width: 95%;
+    height: 549px;
+    margin: 0 auto;
+    border-radius: 10px;
+    background: #fff;
+    }
+.yx ul{width: 100%;padding-top: 0px;padding-left: 0;}
+.yx img{float: left;margin: 10px;}
+.yx .sm{height: 30px;padding:5px 10px 0 10px; }
+.yx li{
+    list-style: none;
+    height: 100px;
+    border-bottom: 1px #ccc solid;
+    position: relative;}
+.yx a{text-decoration: none;color: #000;}
+.yx p{padding-top: 10px;margin: 4px;;}
+
+.ziti{color: #666;font-size: 14px;padding-top: 20px;}
+#xz{
+    width: 50px; 
+    height: 27px;
+    color: #fff;
+    background: rgb(34, 129, 238);
+    display: inline-block;
+    text-align: center;
+    font-size: 16px;
+    line-height: 25px;
+    border-radius: 3px;
+    position: absolute;
+    right: 5%;
+    top: 35px;
+    }
+#ul1 li{width: 50%;float: left;}
+footer{
+    width: 100%;
+    height: 90px;
+    background: #fff;
+    margin-top: 3px;
+    }
+footer ul{width: 100%;height: 90px;padding: 0px;}
+footer li{width: 25%;list-style: none;float: left;padding-top: 10px;}
+footer img{margin-left: 40%;}
+footer p{margin-top: 10px;font-size: 14px;text-align: center;}
+footer a{text-decoration:none;color:#000;}
+</style>
+</head>
+<body>
+<div class="all">
+<!--header-->
+<header>
+<p style="text-align:center;padding-top: 30px;color: #fff;font-size: 16px;">发现</p>
+<a href="#" class="a1"><img src="img/1.png"  width="37"></a>
+</header>
+
+<!--兴趣论坛-->
+<div class="xq">
+    <ul>
+        <li class="sm"><span style="float:left;">兴趣论坛</span><span style="float:right;"><a href="#">全部 ></a></span></li>
+        <li class="zj">
+        <img src="img/a10.png" class="img1" width="40">
+        <p class="p1">发现好游戏</p>
+        <span style="float:right;font-size: 18px;">>></span>
+        <br>
+        <p class="p2">分享好游戏&一起来找茬</p>
+        </li>
+        <li class="xm">
+        <img src="img/a10.png" class="img1" width="40">
+        <p class="p1">灌水签到专区</p>
+        <span style="float:right;font-size: 18px;">>></span>
+        <br>
+        <p class="p2">每日发帖签到赚金币</p>
+        </li>
+    </ul>
+</div>
+
+<!--精彩活动-->
+<div class="xq">
+    <ul>
+        <li class="sm"><span style="float:left;">精彩活动</span><span style="float:right;"><a href="#">全部43场活动 ></a></span></li>
+        <li class="zj2">
+            <ul id=ul1>
+                <li><img src="img/lun4.jpg" width="80%"></li>
+                <li><img src="img/lun3.jpg" width="80%"></li>
+            </ul>
+            <p></p>
+        </li>
+
+    </ul>
+</div>
+<!--礼包中心-->
+<div class="yx">
+    <ul>
+       <li class="sm"><span style="float:left;">游戏礼包</span><span style="float:right;"><a href="#">全部礼包 ></a></span></li>
+       <li>
+           <a href="#">
+           <img src="img/yx2.jpg">
+           <p>和平精英（今日公测）</p>
+           <p class="ziti">金币999，吉利服10天</p></a>
+           <a href="#" id="xz">领取</a>
+       </li>
+       <li>
+           <a href="#">
+           <img src="img/yx5.jpg">
+           <p>神庙逃亡2（周年派对）</p>
+           <p class="ziti">金币20000，人物，饰品</p></a>
+           <a href="#" id="xz">领取</a>
+       </li>
+       <li>
+           <a href="#">
+           <img src="img/yx6.jpg">
+           <p>机器人酷跑3</p>
+           <p class="ziti">机器人皮肤，强力道具</p></a>
+           <a href="#" id="xz">领取</a>
+       </li>
+       <li>
+           <a href="#">
+           <img src="img/yx7.jpg">
+           <p>荣耀足球</p>
+           <p class="ziti">送满级VIP，各种皮肤，宠物</p></a>
+           <a href="#" id="xz">领取</a>
+       </li>
+       <li>
+           <a href="#">
+           <img src="img/yx8.jpg">
+           <p>黑洞大乱斗</p>
+           <p class="ziti">送各种皮肤，金币10000</p></a>
+           <a href="#" id="xz">领取</a>
+       </li>
+   </ul>
+   </div>
+
+
+<!--底部导航栏-->
+<footer>
+<ul>
+<a href="index.html"><li><img src="img/d1.png" width="17%"><p>推荐</p></li></a>
+<a href="shequ.html"><li><img src="img/d2.png" width="17%"><p>社区</p></li></a>
+<a href="faxian.html"><li><img src="img/d3.png" width="17%"><p>发现</p></li></a>
+<a href="wode.html"><li><img src="img/d4.png" width="17%"><p>我的</p></li></a></ul>
+</footer>
+</div>
+</body>
+</html>

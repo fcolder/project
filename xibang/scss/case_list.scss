@@ -1,0 +1,45 @@
+.menu a{
+	display: inline-block;
+	padding: 12px 2px;
+	border-bottom: 2px solid #fff;
+}
+.menu a:hover,.menu .active{
+	color: #ce251f;
+	border-bottom: 2px solid #ce251f;
+}
+.pos{
+	line-height: 50px;
+	color: #a3a3a3;
+}
+.pos a{
+	color: #a3a3a3;
+}
+.title{
+	padding-top: 0;
+}
+
+.list h3{
+	margin-top: 20px;
+	margin-left: 44px;
+	font-size: 18px;
+}
+.list p{
+	margin-left: 44px;
+	line-height: 24px;
+	margin-top: 18px;
+	color: #a3a3a3;
+	text-indent: 2em;
+	margin-bottom: 75px;
+}
+
+@media screen and (max-width: 768px) {
+	.list h3,.list p{
+		margin-left: 0;
+		text-align: center;
+	}
+	.list p{
+		margin-top: 10px;
+		margin-bottom: 20px;
+	}
+}
+

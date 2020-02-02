@@ -1,0 +1,95 @@
+@charset "utf-8";
+/* CSS Document */
+
+.b{
+	padding-top:30px;
+}
+.c{
+	width:150px;
+	height:30px;
+	border:1px solid  #000;
+	background:#F60;
+	margin-left:50px;
+	float: left;
+	font-size:18px;
+}
+.d{
+	margin-left:50px;
+	float:left;
+}
+.e{
+	padding-top:10px;
+	clear:both;
+}
+a:link {
+    color: #FFF;
+    text-decoration:underline;
+    }
+
+.two{
+	float:left;
+	}
+.three{
+     border:3px solid #000;    
+     background: #6C6257;
+	 text-align:center; 
+}
+
+.four{
+	float:left;
+	background: #120C0E;
+}
+.four p{
+	color:#FFF;
+}
+p{
+	padding:5px;
+	size:10px;
+	color:#999;
+	}
+.five{
+	background: #999;
+	float:right;
+}
+.six{
+	 border:3px solid  #633;    
+     background: #201517; 
+}
+
+.seven{
+	 width:600px;
+	 text-align:center;
+	 margin-left:60px;
+	 margin-top:10px;
+	 border:1px solid  #633;    
+     background: #382327;
+}
+.image3{
+	margin:10px 65px;
+}
+.qqq{
+	margin-left:200px;
+	
+}
+.jiewei{
+	padding-top:50px;
+	clear:both;
+	background: #000;
+	}
+.image3,.qqq,.image4{
+	margin-top:20px;
+}
+.fukuang{
+	left:80PX;
+	top:450PX;
+	margin:10px;
+	position: fixed;
+}
+.fudong{
+	width:160px;
+	height:315px;
+	right:36px;
+	top:450px;
+	margin:10px;
+	position: fixed;
+}

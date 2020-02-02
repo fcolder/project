@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>梦想之旅</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">		
+<link rel="stylesheet" href="css/bootstrap.min.css" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<style>
+nav{background:#dfdfdf;}
+.xiala:hover ul{ display:block;}
+body{
+    width: 100%;
+    height: 1600px;
+    background: rgb(233, 232, 232);
+    }
+.guo{padding-left: 20px;}
+.navbar-left li:hover{background: #cccccc;}
+.fud{
+    position: fixed;
+    top: 55%;
+    left: 0px;
+}
+.nr1{margin-top:30px; }
+.rbox{float: right;}
+.lbox{float: left;width: 400px;background: rgb(224, 222, 222);}
+.lbox ul{padding:0px;margin-bottom: 0px;}
+.lbox li{list-style: none;border-bottom: 1px solid #ccc;padding-left: 40px;}
+.lbox h4{font-weight: bold;}
+.lbox p{color: #666;}
+.lbox a{text-decoration: none;color: #000;}
+.lbox a:hover{color: red;}
+
+.nr2{background: #fff;padding: 50px 0 50px 0; }
+.nr2 table{border: 1px solid rgb(187, 184, 184);}
+.nr2 .col-md-3{padding-left: 0;}
+.table td{height:57px;;}
+.left1 thead tr{ background: red; color: #fff;height: 50px;}
+.left1 tbody tr{height: 40px;}
+.left1 tbody a,.right1 tbody a{color: #000; text-decoration: none;}
+.left1  a:hover{color: red;text-decoration: none;font-size: 18px;}
+.left1 tbody tr:hover{background: rgb(135, 230, 243);}
+.right1 thead tr th{display:block; width: 100px;border-bottom: 2px solid red;}
+.col-md-9{background: #fff;}
+.xlx1{width: 100%;height: 50px ;border-bottom: 1px solid #ccc;}
+.xlx2{width: 100px;height:50px;;border-bottom: 2px solid red; }
+.xlx2 p{padding-top: 15px;}
+.slt{padding-top: 10px;}
+.slt a{ text-decoration: none;color: #000;}
+.t1{text-align: center;margin-top: 10px;}
+.t2{text-align: center;color: red;}
+.nr3{text-align: center;background:#fff;height: 400px;}
+.nr3 h2{margin: 50px;}
+
+.jumbotron img{float: left;margin:80px 80px 0 0; width: 17%;}
+.jumbotron{background: linear-gradient(180deg,#6dd27c,#1bcdae);height: 500px;}
+.jumbotron H2{margin-top: 50PX;}
+
+.lytj img{float: left;margin-right: 15px;}
+.lytj{margin-top: 50px;margin-bottom: 50px;}
+.lytj .col-md-3{background: #fff; padding: 0;margin-left: 20px;}
+.lytj .row{margin-top: 30px;}
+#col1,#col2{margin-left: 170px;}
+.p1{margin-top: 10px;}
+.p2{
+    display:inline-block;
+    width: 103px;
+    height: 25px;
+    color: #0695e7;
+    border: 1px solid #0695e7;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 25px;}
+.p3{color: red;margin-top: 50px;display:block;float: right;margin-right: 20px;font-size: 20px;}
+.lytj a{text-decoration: none;color: #000;}
+
+
+
+footer{
+    height: 200px;
+    border-top: 2px solid red;
+    padding-top: 15px;
+    color: #ccc;
+    background-color: rgba(0,0,0,.8);}
+footer .col-md-4{padding: 20px 0 0 0;font-size: 12px;}
+footer a{color: #ccc;text-decoration: none;}
+footer a:hover{text-decoration: none;color: #fff;}
+</style>
+</head>
+<body>
+<!--header-->
+<div class="container-fluid">
+<div class="row">   
+<nav class="navbar navbar-default navbar-fixed-top">
+<img src="img/logo1.png" width="100" style="float:left;">
+<div class="container">
+    <ul class="nav navbar-nav navbar-left">
+        <li class="xiala"><a href="index.html" class="dropdown-toggle" data-toggle="dropdown">梦想之旅</a>
+            <ul class="dropdown-menu">
+                <li class="dropdown-header guo">国内</li>
+                <li><a href="#">杭州</a></li>
+                <li><a href="#">新疆</a></li>
+                <li><a href="#">海南</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="dropdown-header  guo">国外</li>
+                <li><a href="#">日本</a></li>
+                <li><a href="#">巴黎</a></li>
+            </ul>
+        </li>
+        <li class="dropdown"><a href="#"  class="dropdown-toggle" data-toggle="dropdown">旅游度假<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+                    <li><a href="#">云南</a></li>
+                    <li><a href="#">桂林</a></li>
+                </ul></li>
+        <li ><a href="#">国内游</a></li>
+        <li><a href="#">出境游</a></li>
+        <li><a href="#">港澳游</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">    
+                        <li>
+                          <div class="input-group" style="margin-top:8px; width:400px;">
+                                 <input type="text" class="form-control" placeholder="搜索景点...">
+                              <span class="input-group-btn">
+                              <button class="btn btn-default" type="button">搜索</button>
+                                </span>
+                           </div>
+                         </li>   
+                         <li style="margin-left:20px;"><button type="button" class="btn btn-default navbar-btn navbar-right">登录</button></li>
+    </ul>
+</div>           
+</nav>     
+</div>
+</div>
+<!--浮动框-->
+<div class="fud">
+<img src="img/fukuang.png" width="70%">
+</div>
+
+<!--内容1-->
+<div class="container-fluid nr1" style="padding: 80px 150px;margin-left: 0px;" >
+<!--左-->
+<div class="lbox">
+        <ul>
+        <li>
+        <a href="#"><h4>周边旅游</h4></a>
+        <a href="#"><p>母亲节专场 沙滩直通车 温泉抢购</p></a>
+        </li>
+        <li><a href="#">
+        <h4>出境旅游</h4>
+        <p>买1送1 端午出境 海岛折扣 自由行</p></a>
+        </li>
+        <li><a href="#">
+        <h4>国内旅游</h4></a>
+        <a href="#">
+        <p>国内爆款 买1送1 自由行 限时抢购</p></a>
+        </li>
+        <li><a href="#">
+        <h4>景点门票</h4></a>
+        <a href="#">
+        <p>广州长隆 珠海长隆 温泉门票</p></a>
+        </li>
+        <li><a href="#">
+        <h4>度假酒店</h4></a>
+        <a href="#">
+        <p>长隆酒店 温泉酒店 沙滩海岛酒店</p></a>
+        </li>
+        <li><a href="#">
+        <h4>港澳旅游</h4></a>
+        <a href="#">
+        <p>珠海拱北直通车 中港通车票</p></a>
+        </li>
+        </ul>
+</div>
+<!--轮播-->
+<div id="myCarousel" class="carousel slide rbox" data-ride="carousel"  data-interval="1500">
+        <!-- 轮播（Carousel）指标 -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
+        </ol>   
+        <!-- 轮播（Carousel）项目 -->
+
+<div class="carousel-inner">
+            <div class="item active">
+                <a href="#"><img src="img/1.jpg" alt="First slide"></a>
+                <div class="carousel-caption">梦想之旅</div>
+            </div>
+            <div class="item">
+                <a href="#"><img src="img/6.jpg" alt="Second slide"></a>
+            <div class="carousel-caption">雾凇</div>
+        </div>
+            <div class="item">
+                <a href="#"><img src="img/2.jpg" alt="Third slide"></a>
+                <div class="carousel-caption">日出</div>
+            </div>
+            <div class="item">
+                    <a href="#"><img src="img/s2.jpg" alt="Third slide"></a>
+                    <div class="carousel-caption">夜景</div>
+            </div>
+            
+            <div class="item">
+                    <a href="#"><img src="img/s1.jpg" alt="Third slide"></a>
+                <div class="carousel-caption">巴黎</div>
+            </div>
+</div>
+
+<!-- 轮播（Carousel）控制器 -->
+<a class="carousel-control left" href="#myCarousel" 
+    data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span>
+</a>
+<a class="carousel-control right" href="#myCarousel" 
+    data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span>
+</a>
+</div>
+</div>
+<!--内容2-->
+<div class="container-fluid nr2">
+<div class="row">
+<div class="col-md-2 col-md-offset-1">
+<table class="table table-border left1">
+    <thead>
+        <tr><th><p>热门景点</p></th></tr>
+    </thead>
+    <tbody>
+        <tr><td><a href="#">出境游</a></td></tr>
+        <tr><td><a href="#">日韩</td></a></tr>
+        <tr><td><a href="#">马尔代夫</td></tr>
+        <tr><td><a href="#">夏威夷</td></tr>
+        <tr><td><a href="#">泰国</td></tr>
+        <tr><td><a href="#">国内游</td></tr>
+        <tr><td><a href="#">惠州</td></tr>
+        <tr><td><a href="#">博罗</td></tr>
+        <tr><td><a href="#">福田</td></tr>
+        <tr><td><a href="#">珠江</td></tr>
+    </tbody>
+</table>
+</div>
+<div class="col-md-8">
+<div class="xlx1"><div class="xlx2"><p><strong>新路线</strong></p></div></div>
+<div class="row slt">
+        <div class="col-md-4">
+            <a href="#" class="thumbnail">
+                <img src="img/a1.jpg">
+                <p class="t1">泰国5日跟团游</p>
+                <p class="t2">￥3500.00</p>
+            </a>
+        </div>
+        <div class="col-md-4">
+            <a href="#" class="thumbnail">
+                <img src="img/a2.jpg">
+                <p class="t1">新加坡5日跟团游</p>
+                <p class="t2">￥5800.00</p>
+            </a>
+        </div>
+        <div class="col-md-4">
+            <a href="#" class="thumbnail">
+                <img src="img/a3.jpg">
+                <p class="t1">巴黎5日跟团游</p>
+                <p class="t2">￥5200.00</p>
+            </a>
+        </div>
+        <div class="col-md-4">
+            <a href="#" class="thumbnail">
+                <img src="img/a4.jpg">
+                <p class="t1">马尔代夫5日跟团游</p>
+                <p class="t2">￥5700.00</p>
+            </a>
+        </div>
+        <div class="col-md-4">
+                <a href="#" class="thumbnail">
+                    <img src="img/a5.jpg">
+                    <p class="t1">夏威夷5日跟团游</p>
+                    <p class="t2">￥7200.00</p>
+                </a>
+        </div>
+        <div class="col-md-4">
+                <a href="#" class="thumbnail">
+                    <img src="img/a6.jpg">
+                    <p class="t1">香格里拉5日跟团游</p>
+                    <p class="t2">￥4300.00</p>
+                </a>
+        </div>
+    </div>
+</div>
+</div>
+<hr style="background:red;height: 2px;width: 84%;text-align: center; margin-top: 50px;" >
+</div>
+<!--内容3-->
+<div class="container-fluid nr3">
+<h2>
+    <span style="color:rgb(247, 7, 7);">世</span>
+    <span style="color:rgb(247, 94, 6);">界</span>
+    <span style="color:rgb(248, 152, 8);">那</span>
+    <span style="color:rgb(252, 235, 5);">么</span>
+    <span style="color:rgb(209, 255, 4);">大</span>
+    <span style="color:rgb(184, 250, 4);">，</span>
+    <span style="color:rgb(115, 253, 2);">我</span>
+    <span style="color:rgb(2, 253, 107);">想</span>
+    <span style="color:rgb(3, 248, 236);">去</span>
+    <span style="color:rgb(0, 140, 255);">看</span>
+    <span style="color:rgb(6, 31, 255);">看！</h2>
+<div class="row">
+<div class="col-md-2 col-md-offset-2"><img src="img/1.png"><p>私人定制</p><p>量身打造专属行程，自由、省心</p></div>
+<div class="col-md-2"><img src="img/2.png"><p>自由组团</p><p>不与任何陌生人成团</p></div>
+<div class="col-md-2"><img src="img/3.png"><p>专业可靠</p><p>服务态度质量保障</p></div>
+<div class="col-md-2"><img src="img/4.png"><p>价格透明</p><p>全程无自费项目，一价全含</p></div>
+</div>
+</div>
+<!--巨幕-->
+<div class="jumbotron">
+    <div class="container">
+            <img src="img/5.png" >
+            <h2>来一次说走走的旅行吧!</h2>
+            <p>旅行是一个过程，一次发现。是一个自我发现的过程。真正的旅行让我们直面自我。</p>
+            <p>去你想去，圆心中的梦。走梦想之路</p>
+    </div>
+</div>
+
+<!--旅游推荐-->
+<div class="container-fluid lytj">
+<div class="row">
+<div class="col-md-3" id="col1">
+<a href="#">
+<img src="img/b1.jpg" width="150">
+<p class="p1"><strong>夏威夷豪华浮艇一日游</strong></p>
+<p class="p2">APP立减300￥</p>
+<p class="p3">990￥</p>
+</a>
+</div>
+<div class="col-md-3"><a href="#">
+    <img src="img/b2.jpg" width="150">
+    <p class="p1"><strong>体验浪漫巴黎夜景三小时</strong></p>
+    <p class="p2">APP立减250￥</p>
+    <p class="p3">950￥</p></a>
+</div>
+<div class="col-md-3"><a href="#">
+    <img src="img/b3.jpg" width="150">
+    <p class="p1"><strong>美国名胜风景</strong></p>
+    <p class="p2">APP立减320￥</p>
+    <p class="p3">1100￥</p></a>
+</div>
+</div>
+<div class="row"><a href="#">
+<div class="col-md-3" id="col2"><img src="img/b4.jpg" width="150">
+    <p class="p1"><strong>森林火车带你遍历美景</strong></p>
+    <p class="p2">APP立减350￥</p>
+    <p class="p3">999￥</p></a>
+</div>
+<div class="col-md-3"><a href="#">
+    <img src="img/b5.jpg" width="150">
+    <p><p class="p1"><strong>新西兰一日游</strong></p>
+    <p class="p2">APP立减400￥</p>
+    <p class="p3">1300￥</p></a>
+</div>
+<div class="col-md-3"><a href="#">
+    <img src="img/b6.jpg" width="150">
+    <p class="p1"><strong>北京故宫一日游</strong></p>
+    <p class="p2">APP立减330￥</p>
+    <p class="p3">1000￥</p></a>
+</div>
+</div>
+</div>
+<!--底部-->
+<footer class="container-fluid">
+<div class="row">
+<div class="col-md-1 col-md-offset-2">
+    <h4>关于我们</h4>
+    <a><p>旅游简介</p></a>
+    <a><p>联系我们</p></a>
+    <a><p>合作伙伴</p></a>
+    <a><p>意见建议</p></a>
+</div>
+<div class="col-md-1 ">
+    <h4>网站条款</h4>
+    <a><p>会员条款</p></a>
+    <a><p>社区指南</p></a>
+    <a><p>版权声明</p></a>
+    <a><P>免责声明</P></a>
+</div>
+<div class="col-md-1">
+    <h4>帮助中心</h4>
+    <a><p>新手上路</p></a>
+    <a><p>使用帮助</p></a>
+    <a><p>网站地图</p></a>
+    <a><P>旅行工具</P></a>
+</div>
+<div class="col-md-1">
+    <h4>其它问题</h4>
+    <a><p>签证相关问题</p></a>
+    <a><p>退款问题</p></a>
+    <a><p>保障救援问题</p></a>
+</div>
+
+<div class="col-md-4 col-md-offset-1">
+<p>2004-2019 © 梦想之旅®  All rights reserved. Version v5.57   </p>
+<p> 京ICP备66666号 京ICP证666666号 营业执照  经营许可证</p>
+<p>公司为旅行者提供原创实用的出境游旅行指南和旅游攻略、旅行社</p>
+<p>区和问答交流平台，并提供签证、保险、机票、酒店预订、租车等服务</p>
+<p></p>
+</div>
+
+</div>   
+</footer>
+</body>
+</html>
